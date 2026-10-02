@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hoang Van Trang | Business Analyst in Training</title>
+<meta name="description" content="Hoang Van Trang: Management Trainee at Ecomobi PTE and Master's student in Business Analyst for Decision Makers at National College of Ireland. Data Analysis and Microsoft Power BI.">
+<meta property="og:title" content="Hoang Van Trang | Business Analyst in Training">
+<meta property="og:description" content="Management Trainee at Ecomobi PTE and Master's student in Business Analyst for Decision Makers at National College of Ireland.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hoang Van Trang | Business Analyst in Training">
+<meta name="twitter:description" content="Management Trainee at Ecomobi PTE and Master's student in Business Analyst for Decision Makers at National College of Ireland.">
+<meta name="twitter:url" content="https://YOUR-USERNAME.github.io/">
+<!-- Add og:image later: 1200x630 PNG matching dark theme -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📊%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+(function () {
+  try {
+    if (localStorage.getItem('theme') === 'light') {
+      document.documentElement.classList.add('light');
+    }
+  } catch (e) {}
+})();
+</script>
+<style>
+:root {
+  --bg: #020a18;
+  --bg-grad: linear-gradient(170deg, #020a18 0%, #041028 40%, #06142e 70%, #020a18 100%);
+  --surface: rgba(8,24,56,0.85);
+  --surface-2: rgba(12,34,76,0.6);
+  --border: rgba(0,170,255,0.12);
+  --border-glow: rgba(0,170,255,0.3);
+  --text: #d0e0f0;
+  --text-bright: #e8f0ff;
+  --text-dim: #6888aa;
+  --neon: #00aaff;
+  --cyan: #00e5ff;
+  --green: #00ff88;
+  --amber: #ffaa00;
+  --red: #ff4466;
+  --purple: #aa66ff;
+  --header-bg: rgba(2,10,24,0.7);
+  --grid-line: rgba(0,170,255,0.03);
+  --orb-opacity: 0.08;
+  --btn-text: #021022;
+  --name-grad: linear-gradient(90deg, #e8f0ff 0%, #00e5ff 100%);
+}
+html.light {
+  --bg: #f4f8fd;
+  --bg-grad: linear-gradient(170deg, #f4f8fd 0%, #e9f1fb 40%, #e2ecf8 70%, #f4f8fd 100%);
+  --surface: rgba(255,255,255,0.94);
+  --surface-2: rgba(232,242,252,0.9);
+  --border: rgba(10,80,160,0.16);
+  --border-glow: rgba(10,100,200,0.4);
+  --text: #1f3550;
+  --text-bright: #0a1a30;
+  --text-dim: #52698a;
+  --neon: #0a6fc2;
+  --cyan: #0089b3;
+  --green: #07895a;
+  --amber: #b36b00;
+  --red: #c2224a;
+  --purple: #7a3fd1;
+  --header-bg: rgba(244,248,253,0.78);
+  --grid-line: rgba(10,80,160,0.05);
+  --orb-opacity: 0.14;
+  --btn-text: #ffffff;
+  --name-grad: linear-gradient(90deg, #0a1a30 0%, #0a6fc2 100%);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+a { color: var(--neon); text-decoration: none; transition: color .2s, text-shadow .2s; }
+a:hover { color: var(--cyan); text-shadow: 0 0 12px var(--border-glow); }
+
+/* Background depth */
+.bg-gradient { position: fixed; inset: 0; background: var(--bg-grad); z-index: -3; }
+.bg-grid {
+  position: fixed; inset: 0; z-index: -2; pointer-events: none;
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.orb {
+  position: fixed; border-radius: 50%; filter: blur(100px);
+  opacity: var(--orb-opacity); z-index: -1; pointer-events: none;
+}
+.orb.o1 { width: 420px; height: 420px; background: var(--neon); top: 8%; left: calc(50% - 440px - 360px); animation: orbit1 40s linear infinite; }
+.orb.o2 { width: 480px; height: 480px; background: var(--purple); top: 45%; left: calc(50% + 440px - 120px); animation: orbit2 55s linear infinite; }
+.orb.o3 { width: 360px; height: 360px; background: var(--cyan); top: 70%; left: calc(50% - 440px - 320px); animation: orbit3 48s linear infinite; }
+@keyframes orbit1 { 0% { transform: translate(0,0); } 25% { transform: translate(-40px,120px); } 50% { transform: translate(-80px,0); } 75% { transform: translate(-40px,-120px); } 100% { transform: translate(0,0); } }
+@keyframes orbit2 { 0% { transform: translate(0,0); } 25% { transform: translate(60px,-100px); } 50% { transform: translate(120px,0); } 75% { transform: translate(60px,100px); } 100% { transform: translate(0,0); } }
+@keyframes orbit3 { 0% { transform: translate(0,0); } 25% { transform: translate(-60px,-90px); } 50% { transform: translate(-20px,-160px); } 75% { transform: translate(-70px,-80px); } 100% { transform: translate(0,0); } }
+@media (max-width: 1100px) { .orb { display: none; } }
+
+/* Header */
+header {
+  position: sticky; top: 0; z-index: 100;
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--border);
+}
+.header-inner {
+  max-width: 880px; margin: 0 auto; padding: 12px 20px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text-bright); letter-spacing: .2px; }
+.brand .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 10px var(--green); }
+.actions { display: flex; gap: 8px; }
+.icon-btn {
+  width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center;
+  background: transparent; color: var(--text); cursor: pointer;
+  border: 1px solid var(--border); border-radius: 10px;
+  transition: border-color .2s, color .2s, box-shadow .2s, background .2s;
+}
+.icon-btn:hover { border-color: var(--border-glow); color: var(--cyan); box-shadow: 0 0 14px var(--border); background: var(--surface-2); }
+.icon-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.icon-sun { display: none; }
+html.light .icon-sun { display: block; }
+html.light .icon-moon { display: none; }
+
+/* Content */
+.container { max-width: 880px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 1; }
+
+/* Hero */
+.hero { padding: 80px 0 40px; animation: rise .8s ease both; }
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+.hero-top { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+.avatar {
+  width: 84px; height: 84px; border-radius: 24px; flex: 0 0 auto;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 1.9rem; letter-spacing: 1px; color: var(--btn-text);
+  background: linear-gradient(135deg, var(--neon), var(--cyan));
+  box-shadow: 0 0 40px var(--border-glow), inset 0 0 0 1px rgba(255,255,255,.25);
+}
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px;
+  border: 1px solid var(--border-glow); background: var(--surface-2);
+  font-size: .8rem; font-weight: 600; color: var(--cyan); letter-spacing: .4px;
+}
+.eyebrow .pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 0 var(--green); animation: pulse 2s infinite; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(0,255,136,.5); } 70% { box-shadow: 0 0 0 8px rgba(0,255,136,0); } 100% { box-shadow: 0 0 0 0 rgba(0,255,136,0); } }
+.hero h1 {
+  margin-top: 10px; font-size: clamp(2.4rem, 7vw, 4rem); line-height: 1.06; font-weight: 800; letter-spacing: -1.2px;
+  background: var(--name-grad); -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+}
+.hero .role { margin-top: 18px; color: var(--cyan); font-weight: 600; font-size: 1.05rem; }
+.hero .statement { margin-top: 22px; font-size: clamp(1.4rem, 3.6vw, 2.1rem); line-height: 1.25; font-weight: 700; color: var(--text-bright); max-width: 720px; letter-spacing: -.4px; }
+.cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px; }
+.cta {
+  display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 12px;
+  background: linear-gradient(135deg, var(--neon), var(--cyan)); color: var(--btn-text); font-weight: 700;
+  box-shadow: 0 6px 28px var(--border-glow);
+  transition: transform .2s, box-shadow .2s;
+}
+.cta:hover { color: var(--btn-text); transform: translateY(-2px); text-shadow: none; box-shadow: 0 10px 36px var(--border-glow); }
+.cta.ghost { background: transparent; color: var(--text-bright); border: 1px solid var(--border-glow); box-shadow: none; }
+.cta.ghost:hover { color: var(--cyan); background: var(--surface-2); box-shadow: 0 0 20px var(--border); }
+
+/* Highlights */
+.highlights { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 8px 0 44px; }
+@media (max-width: 720px) { .highlights { grid-template-columns: 1fr; } }
+.hl {
+  padding: 18px 18px 16px; border-radius: 16px; background: var(--surface); border: 1px solid var(--border);
+  position: relative; overflow: hidden; transition: transform .25s, border-color .25s, box-shadow .25s;
+}
+.hl::before { content: ''; position: absolute; left: 0; top: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--neon), var(--cyan)); }
+.hl:nth-child(2)::before { background: linear-gradient(90deg, var(--purple), var(--neon)); }
+.hl:nth-child(3)::before { background: linear-gradient(90deg, var(--green), var(--cyan)); }
+.hl:hover { transform: translateY(-3px); border-color: var(--border-glow); box-shadow: 0 12px 30px var(--border); }
+.hl .k { font-size: .72rem; text-transform: uppercase; letter-spacing: 1.2px; color: var(--text-dim); font-weight: 600; }
+.hl .v { margin-top: 6px; font-size: 1.12rem; font-weight: 700; color: var(--text-bright); line-height: 1.3; }
+.hl .d { margin-top: 4px; font-size: .88rem; color: var(--text-dim); line-height: 1.45; }
+
+/* Sections */
+.section {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 18px;
+  margin-bottom: 16px; overflow: hidden; transition: border-color .25s, box-shadow .25s;
+}
+.section:hover { border-color: var(--border-glow); box-shadow: 0 10px 40px var(--border); }
+.section-head {
+  width: 100%; display: flex; align-items: center; gap: 14px; padding: 20px 22px;
+  background: transparent; border: 0; cursor: pointer; text-align: left;
+  color: var(--text-bright); font: inherit; font-weight: 700; font-size: 1.12rem;
+}
+.num {
+  flex: 0 0 auto; width: 34px; height: 34px; border-radius: 50%;
+  border: 1.5px solid var(--neon); color: var(--neon);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: .9rem; font-weight: 700; background: var(--surface-2);
+}
+.title { flex: 1; }
+.toggle { flex: 0 0 auto; width: 20px; height: 20px; position: relative; color: var(--text-dim); }
+.toggle::before, .toggle::after {
+  content: ''; position: absolute; left: 50%; top: 50%; background: currentColor; border-radius: 2px;
+  transform: translate(-50%, -50%); transition: transform .3s, opacity .3s;
+}
+.toggle::before { width: 14px; height: 2px; }
+.toggle::after { width: 2px; height: 14px; }
+.section.open .toggle::after { transform: translate(-50%, -50%) rotate(90deg); opacity: 0; }
+.section-body { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .35s ease; }
+.section.open .section-body { grid-template-rows: 1fr; }
+.section-inner { overflow: hidden; }
+.section-content { padding: 4px 22px 26px 70px; }
+@media (max-width: 600px) { .section-content { padding-left: 22px; } }
+.section-content p + p { margin-top: 12px; }
+.sub { margin: 24px 0 12px; font-size: .75rem; text-transform: uppercase; letter-spacing: 1.3px; color: var(--text-dim); font-weight: 600; }
+.sub:first-child { margin-top: 4px; }
+.quote {
+  border-left: 3px solid var(--neon); padding: 4px 0 4px 16px; color: var(--text-bright);
+  font-size: 1.05rem; font-weight: 500;
+}
+
+/* Timeline */
+.timeline { position: relative; padding-left: 26px; }
+.timeline::before { content: ''; position: absolute; left: 6px; top: 6px; bottom: 6px; width: 2px; background: linear-gradient(var(--neon), transparent); border-radius: 2px; }
+.tl { position: relative; padding: 16px 18px; margin-bottom: 14px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface-2); transition: border-color .25s, transform .25s; }
+.tl:last-child { margin-bottom: 0; }
+.tl:hover { border-color: var(--border-glow); transform: translateX(3px); }
+.tl::before { content: ''; position: absolute; left: -26px; top: 22px; width: 14px; height: 14px; border-radius: 50%; background: var(--bg); border: 2px solid var(--cyan); box-shadow: 0 0 12px var(--border-glow); }
+.tl .role-t { font-weight: 700; color: var(--text-bright); }
+.tl .org { color: var(--neon); font-weight: 600; font-size: .95rem; }
+.tl .when { margin-top: 2px; font-size: .85rem; color: var(--text-dim); }
+.badge { display: inline-block; margin-left: 8px; padding: 2px 10px; font-size: .7rem; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; border-radius: 999px; color: var(--green); border: 1px solid var(--green); vertical-align: middle; }
+
+/* Cards */
+.grid2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+@media (max-width: 640px) { .grid2 { grid-template-columns: 1fr; } }
+.card { padding: 16px 18px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface-2); transition: border-color .25s, transform .25s; }
+.card:hover { border-color: var(--border-glow); transform: translateY(-2px); }
+.card .c-t { font-weight: 700; color: var(--text-bright); line-height: 1.35; }
+.card .c-d { margin-top: 4px; font-size: .88rem; color: var(--text-dim); }
+.card.feature { border-color: var(--border-glow); }
+.pubs { list-style: none; }
+.pubs li { position: relative; padding: 12px 16px 12px 18px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface-2); margin-bottom: 10px; color: var(--text-bright); font-size: .96rem; }
+.pubs li::before { content: ''; position: absolute; left: 0; top: 12px; bottom: 12px; width: 3px; border-radius: 3px; background: var(--purple); }
+.pubs li:last-child { margin-bottom: 0; }
+
+/* Tags */
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag {
+  padding: 6px 14px; border: 1px solid var(--border-glow); border-radius: 999px;
+  font-size: .88rem; color: var(--text-bright); background: var(--surface-2);
+  transition: border-color .2s, box-shadow .2s;
+}
+.tag:hover { border-color: var(--cyan); box-shadow: 0 0 14px var(--border); }
+.tag.strong { background: linear-gradient(135deg, var(--neon), var(--cyan)); color: var(--btn-text); border-color: transparent; font-weight: 600; }
+
+/* Contact */
+.contact-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
+.contact-row .cta { padding: 12px 22px; }
+
+footer {
+  max-width: 880px; margin: 56px auto 0; padding: 24px 20px 40px;
+  color: var(--text-dim); font-size: .85rem; text-align: center;
+  border-top: 1px solid var(--border); position: relative; z-index: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .orb, .hero, .eyebrow .pulse { animation: none; }
+  .section-body, .toggle::before, .toggle::after { transition: none; }
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+<body>
+<div class="bg-gradient"></div>
+<div class="bg-grid"></div>
+<div class="orb o1"></div>
+<div class="orb o2"></div>
+<div class="orb o3"></div>
+
+<header>
+  <div class="header-inner">
+    <span class="brand"><span class="dot"></span>Hoang Van Trang</span>
+    <div class="actions">
+      <button class="icon-btn" id="collapseBtn" title="Collapse all sections" aria-label="Collapse all sections">
+        <svg viewBox="0 0 24 24" id="collapseIcon"><polyline points="7 8 12 3 17 8"></polyline><polyline points="7 16 12 21 17 16"></polyline></svg>
+      </button>
+      <button class="icon-btn" id="themeBtn" title="Toggle light / dark theme" aria-label="Toggle light or dark theme">
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><line x1="12" y1="2" x2="12" y2="5"></line><line x1="12" y1="19" x2="12" y2="22"></line><line x1="2" y1="12" x2="5" y2="12"></line><line x1="19" y1="12" x2="22" y2="12"></line><line x1="4.9" y1="4.9" x2="7" y2="7"></line><line x1="17" y1="17" x2="19.1" y2="19.1"></line><line x1="4.9" y1="19.1" x2="7" y2="17"></line><line x1="17" y1="7" x2="19.1" y2="4.9"></line></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div class="hero-top">
+      <div class="avatar" aria-hidden="true">HT</div>
+      <span class="eyebrow"><span class="pulse"></span>Master's student · National College of Ireland</span>
+    </div>
+    <h1>Hoang Van Trang</h1>
+    <p class="role">Management Trainee at Ecomobi PTE · Business Analyst for Decision Makers (MSc)</p>
+    <p class="statement">Business analyst in training, turning data into decisions.</p>
+    <div class="cta-row">
+      <a class="cta" href="mailto:hgvantrang@gmail.com">Get in touch</a>
+      <a class="cta ghost" href="#experience">View my work</a>
+    </div>
+  </section>
+
+  <div class="highlights">
+    <div class="hl">
+      <div class="k">Research</div>
+      <div class="v">Best Research Award</div>
+      <div class="d">9 International Student Science Forum</div>
+    </div>
+    <div class="hl">
+      <div class="k">Business case</div>
+      <div class="v">Top 3, Team Leader</div>
+      <div class="d">Business Pizza Hackathon 2024</div>
+    </div>
+    <div class="hl">
+      <div class="k">Core skills</div>
+      <div class="v">Data Analysis · Power BI</div>
+      <div class="d">Business Analysis certified</div>
+    </div>
+  </div>
+
+  <div class="section open">
+    <button class="section-head" aria-expanded="true">
+      <span class="num">1</span><span class="title">About me</span><span class="toggle"></span>
+    </button>
+    <div class="section-body"><div class="section-inner"><div class="section-content">
+      <p class="quote">I thrive on creativity and flexibility, embracing new challenges and opportunities with enthusiasm.</p>
+      <p>Driven by a love for innovation and growth, I'm always eager to explore, learn, and make a lasting impact.</p>
+      <p>I'm a Management Trainee at Ecomobi PTE and I'm studying for a Master in Business Analyst for Decision Makers at National College of Ireland, with Data Analysis and Microsoft Power BI as my top skills.</p>
+    </div></div></div>
+  </div>
+
+  <div class="section open" id="experience">
+    <button class="section-head" aria-expanded="true">
+      <span class="num">2</span><span class="title">Experience</span><span class="toggle"></span>
+    </button>
+    <div class="section-body"><div class="section-inner"><div class="section-content">
+      <div class="timeline">
+        <div class="tl">
+          <div class="role-t">Management Trainee<span class="badge">Current</span></div>
+          <div class="org">Ecomobi PTE</div>
+          <div class="when">April 2024 – Present</div>
+        </div>
+        <div class="tl">
+          <div class="role-t">Research and Development Intern Team Leader</div>
+          <div class="org">WageIndicator Foundation</div>
+          <div class="when">June 2024 – December 2024</div>
+        </div>
+      </div>
+    </div></div></div>
+  </div>
+
+  <div class="section open">
+    <button class="section-head" aria-expanded="true">
+      <span class="num">3</span><span class="title">Research and awards</span><span class="toggle"></span>
+    </button>
+    <div class="section-body"><div class="section-inner"><div class="section-content">
+      <p class="sub">Signature work</p>
+      <div class="grid2">
+        <div class="card feature"><div class="c-t">Best Research Award</div><div class="c-d">9 International Student Science Forum</div></div>
+        <div class="card feature"><div class="c-t">Team Leader, Top 3</div><div class="c-d">Business Pizza Hackathon 2024</div></div>
+        <div class="card feature"><div class="c-t">Research and Development Intern Team Leader</div><div class="c-d">WageIndicator Foundation, June to December 2024</div></div>
+        <div class="card"><div class="c-t">Research Team Leader, Third Prize</div><div class="c-d">Scientific Research</div></div>
+        <div class="card"><div class="c-t">Management Trainee Program Completion</div><div class="c-d">Ecomobi PTE</div></div>
+      </div>
+      <p class="sub">Publications</p>
+      <ul class="pubs">
+        <li>Analysis of Factors Influencing the Usage Behavior of Buy Now Pay Later Services in Online Shopping Among Economics Major Students at Universities in Hanoi</li>
+        <li>Challenges in Cross-Border Transportation within the Greater Mekong Subregion: An In-Depth Study of Vietnam</li>
+      </ul>
+    </div></div></div>
+  </div>
+
+  <div class="section open">
+    <button class="section-head" aria-expanded="true">
+      <span class="num">4</span><span class="title">Education, skills and certifications</span><span class="toggle"></span>
+    </button>
+    <div class="section-body"><div class="section-inner"><div class="section-content">
+      <p class="sub">Education</p>
+      <div class="timeline">
+        <div class="tl">
+          <div class="role-t">Master in Business Analyst for Decision Makers</div>
+          <div class="org">National College of Ireland</div>
+          <div class="when">September 2026</div>
+        </div>
+        <div class="tl">
+          <div class="role-t">International Business</div>
+          <div class="org">ISC Paris</div>
+          <div class="when">September 2022 – January 2023</div>
+        </div>
+        <div class="tl">
+          <div class="role-t">Bachelor of Business Administration (BBA)</div>
+          <div class="org">Foreign Trade University</div>
+          <div class="when">2021 – 2024</div>
+        </div>
+      </div>
+      <p class="sub">Top skills</p>
+      <div class="tags"><span class="tag strong">Data Analysis</span><span class="tag strong">Microsoft Power BI</span></div>
+      <p class="sub">Certifications</p>
+      <div class="tags">
+        <span class="tag">Business Analysis Foundations</span>
+        <span class="tag">Ready for Business Analysis</span>
+        <span class="tag">IELTS 8.0</span>
+      </div>
+      <p class="sub">Languages</p>
+      <div class="tags">
+        <span class="tag">English (Professional Working)</span>
+        <span class="tag">Vietnamese (Native or Bilingual)</span>
+        <span class="tag">French (Elementary)</span>
+        <span class="tag">Korean (Elementary)</span>
+      </div>
+    </div></div></div>
+  </div>
+
+  <div class="section open" id="contact">
+    <button class="section-head" aria-expanded="true">
+      <span class="num">5</span><span class="title">Contact</span><span class="toggle"></span>
+    </button>
+    <div class="section-body"><div class="section-inner"><div class="section-content">
+      <p>Open to hearing from recruiters and future employers.</p>
+      <div class="contact-row">
+        <a class="cta" href="mailto:hgvantrang@gmail.com">hgvantrang@gmail.com</a>
+        <a class="cta ghost" href="https://www.linkedin.com/in/hoangvantrang" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div></div></div>
+  </div>
+</main>
+
+<footer>
+  Hoang Van Trang · <span id="year">2026</span> · Built with the AI Badge
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var sections = Array.prototype.slice.call(document.querySelectorAll('.section'));
+  var collapseBtn = document.getElementById('collapseBtn');
+  var collapseIcon = document.getElementById('collapseIcon');
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  document.getElementById('themeBtn').addEventListener('click', function () {
+    var isLight = root.classList.toggle('light');
+    try { localStorage.setItem('theme', isLight ? 'light' : 'dark'); } catch (e) {}
+  });
+
+  function setOpen(section, open) {
+    section.classList.toggle('open', open);
+    section.querySelector('.section-head').setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  function updateCollapseBtn() {
+    var anyOpen = sections.some(function (s) { return s.classList.contains('open'); });
+    var label = anyOpen ? 'Collapse all sections' : 'Expand all sections';
+    collapseBtn.title = label;
+    collapseBtn.setAttribute('aria-label', label);
+    collapseIcon.innerHTML = anyOpen
+      ? '<polyline points="7 8 12 3 17 8"></polyline><polyline points="7 16 12 21 17 16"></polyline>'
+      : '<polyline points="7 3 12 8 17 3"></polyline><polyline points="7 21 12 16 17 21"></polyline>';
+  }
+
+  sections.forEach(function (section) {
+    section.querySelector('.section-head').addEventListener('click', function () {
+      setOpen(section, !section.classList.contains('open'));
+      updateCollapseBtn();
+    });
+  });
+
+  collapseBtn.addEventListener('click', function () {
+    var anyOpen = sections.some(function (s) { return s.classList.contains('open'); });
+    sections.forEach(function (s) { setOpen(s, !anyOpen); });
+    updateCollapseBtn();
+  });
+
+  updateCollapseBtn();
+})();
+</script>
+</body>
+</html>
